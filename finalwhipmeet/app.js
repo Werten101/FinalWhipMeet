@@ -7,13 +7,14 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var meets = require('./routes/meets');
+
 var Meet = require('./models/Meet');
 
 var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://127.0.0.1:27017/finalwhipmeet')
+mongoose.connect('mongodb://127.0.0.1:27017/finalwhipmeets')
 	.then(() => console.log('connection succesful'))
 	.catch((err) => console.error(err));
 

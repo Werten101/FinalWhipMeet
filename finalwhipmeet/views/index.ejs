@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
@@ -9,21 +10,275 @@
   <body ng-app="WhipMeetApp">
   <div class="container">
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <h1> Available Meets </h1>
+    <h1 id="firstTitle" class="center-align"><%= title %></h1>
+
+    <h3 id="firstTitle"> Available Meets </h3>
 
 
     <div class="main" ng-controller="MainController">
-    <h4>Name: {{ meetparts.name }} </h4>
-    <h4>Car: {{ meetparts.car }} </h4>
-    <h4>Place: {{ meetparts.place}} </h4>
-    <h4>Date: {{ meetparts.date | date}} </h4>
-    <h4>Time: {{ meetparts.time }} </h4>
-    <h4>Type: {{ meetparts.type }} </h4>
 
 
     <div class="row">
+        <div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name}}</span>
+            <h6>Car: {{ meetparts.car }} </h6>
+    		<h6>Place: {{ meetparts.place}} </h6>
+    		<h6>Date: {{ meetparts.date | date}} </h6>
+    		<h6>Time: {{ meetparts.time }} </h6>
+    		<h6>Type: {{ meetparts.type }} </h6>
+    		<h6>phone: {{ meetparts.phone }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+      <!-- </div> -->
+
+     <!-- <div class="row"> -->
+        <div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name2}}</span>
+            <h6>Car: {{ meetparts.car2 }} </h6>
+    		<h6>Place: {{ meetparts.place2}} </h6>
+    		<h6>Date: {{ meetparts.date2 | date}} </h6>
+    		<h6>Time: {{ meetparts.time2 }} </h6>
+    		<h6>Type: {{ meetparts.type2 }} </h6>
+    		<h6>phone: {{ meetparts.phone2 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+		<div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name3}}</span>
+            <h6>Car: {{ meetparts.car3 }} </h6>
+    		<h6>Place: {{ meetparts.place3}} </h6>
+    		<h6>Date: {{ meetparts.date3 | date}} </h6>
+    		<h6>Time: {{ meetparts.time3 }} </h6>
+    		<h6>Type: {{ meetparts.type3 }} </h6>
+    		<h6>phone: {{ meetparts.phone3 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+      <!-- </div> -->
+
+     <!-- <div class="row"> -->
+        <div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name4}}</span>
+            <h6>Car: {{ meetparts.car4 }} </h6>
+    		<h6>Place: {{ meetparts.place4}} </h6>
+    		<h6>Date: {{ meetparts.date4 | date}} </h6>
+    		<h6>Time: {{ meetparts.time4 }} </h6>
+    		<h6>Type: {{ meetparts.type4 }} </h6>
+    		<h6>phone: {{ meetparts.phone4 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+
+       <div class="row">
+        <div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name5}}</span>
+            <h6>Car: {{ meetparts.car5 }} </h6>
+    		<h6>Place: {{ meetparts.place5}} </h6>
+    		<h6>Date: {{ meetparts.date5 | date}} </h6>
+    		<h6>Time: {{ meetparts.time5 }} </h6>
+    		<h6>Type: {{ meetparts.type5 }} </h6>
+    		<h6>phone: {{ meetparts.phone5 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+      <!-- </div> -->
+
+     <!-- <div class="row"> -->
+        <div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name6}}</span>
+            <h6>Car: {{ meetparts.car6 }} </h6>
+    		<h6>Place: {{ meetparts.place6}} </h6>
+    		<h6>Date: {{ meetparts.date6 | date}} </h6>
+    		<h6>Time: {{ meetparts.time6 }} </h6>
+    		<h6>Type: {{ meetparts.type6 }} </h6>
+    		<h6>phone: {{ meetparts.phone6 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+		<div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name7}}</span>
+            <h6>Car: {{ meetparts.car7 }} </h6>
+    		<h6>Place: {{ meetparts.place7}} </h6>
+    		<h6>Date: {{ meetparts.date7 | date}} </h6>
+    		<h6>Time: {{ meetparts.time7 }} </h6>
+    		<h6>Type: {{ meetparts.type7 }} </h6>
+    		<h6>phone: {{ meetparts.phone7 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+      <!-- </div> -->
+
+     <!-- <div class="row"> -->
+        <div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name8}}</span>
+            <h6>Car: {{ meetparts.car8 }} </h6>
+    		<h6>Place: {{ meetparts.place8}} </h6>
+    		<h6>Date: {{ meetparts.date8 | date}} </h6>
+    		<h6>Time: {{ meetparts.time8 }} </h6>
+    		<h6>Type: {{ meetparts.type8 }} </h6>
+    		<h6>phone: {{ meetparts.phone8 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+		<div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name9}}</span>
+            <h6>Car: {{ meetparts.car9 }} </h6>
+    		<h6>Place: {{ meetparts.place9}} </h6>
+    		<h6>Date: {{ meetparts.date9 | date}} </h6>
+    		<h6>Time: {{ meetparts.time9 }} </h6>
+    		<h6>Type: {{ meetparts.type9 }} </h6>
+    		<h6>phone: {{ meetparts.phone9 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+      <!-- </div> -->
+
+     <!-- <div class="row"> -->
+        <div class="col s6 m6">
+          <div class="card blue z-depth-5">
+            <div class="card-content white-text">
+              <span class="card-title">Meet by {{meetparts.name10}}</span>
+            <h6>Car: {{ meetparts.car10 }} </h6>
+    		<h6>Place: {{ meetparts.place10}} </h6>
+    		<h6>Date: {{ meetparts.date10 | date}} </h6>
+    		<h6>Time: {{ meetparts.time10 }} </h6>
+    		<h6>Type: {{ meetparts.type10 }} </h6>
+    		<h6>phone: {{ meetparts.phone10 }} </h6>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+
+
+
+    <button data-target="modal1" class="btn modal-trigger blue">Create a Meet</button>
+
+
+	<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Create a Meet</h4>
+      <div class="row">
+		<form class="col s12">
+			<div class="input-field col s12">
+	          <input placeholder="John Doe" id="meet_name" type="text" class="validate">
+	          <label for="meet_name">Name:</label>
+	        </div>
+	        <div class="input-field col s12">
+	          <input placeholder="123 Oak St, City, State" id="meet_place" type="text" class="validate">
+	          <label for="meet_place">Place:</label>
+	        </div>
+	        <div class="input-field col s12">
+	          <input placeholder="Dodge Viper, Audi R8" id="meet_car" type="text" class="validate">
+	          <label for="meet_car">Car:</label>
+	        </div>
+	        <div class="input-field col s12">
+	          <input id="meet_date" type="text" class="datepicker">
+	          <label for="meet_date">Date:</label>
+	        </div>
+	        <div class="input-field col s12">
+	          <input id="meet_time" type="text" class="timepicker">
+	          <label for="meet_time">Time:</label>
+	        </div>
+	        <div class="input-field col s12">
+	          <input placeholder="Muscle, Imports, Stance, Free for all" id="meet_type" type="text" class="validate">
+	          <label for="meet_type">Type:</label>
+	        </div>
+	        <div class="input-field col s12">
+	          <input placeholder="954-123-4567" id="meet_phone" type="text" class="validate">
+	          <label for="meet_phone">Phone:</label>
+	        </div>
+	        <a id="submitBtn" class="waves-effect waves-light btn blue">submit</a>
+		</form>
+	</div>
+      
+    </div>
+    <!-- <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div> -->
+  </div>
+
+
+
+
+
+
+   <!--  <div class="row">
 		<form class="col s12">
 			<div class="input-field col s12">
 	          <input placeholder="John Doe" id="meet_name" type="text" class="validate">
@@ -51,7 +306,7 @@
 	        </div>
 	        <a id="submitBtn" class="waves-effect waves-light btn">submit</a>
 		</form>
-	</div>
+	</div> -->
 
 
 
@@ -63,7 +318,6 @@
 	</div>
 	</div>
 	</div>
-
 
 
 

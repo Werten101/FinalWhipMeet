@@ -7,7 +7,8 @@ var MeetSchema = new Schema ({
 		car: String,
 		date: Date,
 		time: String,
-		type: String
+		type: String,
+		phone: String
 });
 
 module.exports = mongoose.model('Meet', MeetSchema);
