@@ -14,7 +14,7 @@ var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://127.0.0.1:27017/finalwhipmeets')
+mongoose.connect('mongodb://dbadmin:dbpass@ds135963.mlab.com:35963/whipmeet')
 	.then(() => console.log('connection succesful'))
 	.catch((err) => console.error(err));
 
